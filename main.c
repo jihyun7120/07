@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void sub(void);
+int all_files;
+
+extern void sub(void);
 
 int main(int argc, char *argv[])
 {
-    int i;
-    for (i=0;i<3;i++)
-        sub();
+    sub();
+    printf("%d\n", all_files);
 
   system("PAUSE");	
   return 0;
